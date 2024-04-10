@@ -12,6 +12,7 @@ ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
 RUN apk add git
 
 COPY . .
+
 RUN corepack enable pnpm
 RUN pnpm install
 RUN pnpm build
