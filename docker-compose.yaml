@@ -8,3 +8,5 @@ services:
       resources:
         limits:
           memory: 512m
+    volumes:
+      - $HOME/.ssh/:/root/.ssh
