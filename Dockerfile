@@ -9,7 +9,11 @@ RUN apk --no-cache add tzdata && \
 RUN apk --no-cache add jemalloc
 ENV LD_PRELOAD=/usr/lib/libjemalloc.so.2
 
+RUN apk add git
+RUN apk add --no-cache openssh-client
+
 COPY . .
+
 RUN corepack enable pnpm
 RUN pnpm install
 RUN pnpm build
