@@ -1,1 +1,1 @@
-mv /workspaces/web-speed-hackathon-2024/.ssh /root/.ssh
+mv /workspaces/web-speed-hackathon-2024/.ssh /home/.ssh
